@@ -1,0 +1,15 @@
+# Python venv (recreate per proteingym/baselines/esmc_tabicl/requirements.txt)
+esmc_venv/
+__pycache__/
+*.pyc
+
+# Large computed artifacts — regenerate via run_final.sh
+emb/
+pll/
+wtmarg_masked_dec/
+preds_embpllmaskdec/
+logs/
+*.npy
+
+# Per-mutant score files are hosted as a GitHub Release asset, not committed
+esmc_tabicl_supervised_substitutions_scores.zip
