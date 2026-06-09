@@ -22,8 +22,9 @@ Changes:
 - `benchmarks/DMS_supervised/substitutions/{Spearman,MSE}/` — Summary + DMS-level files regenerated
   with ESMC-TabICL included (computed with `performance_DMS_supervised_benchmarks.py`).
 
-Per-mutant score files for all 217 assays × 3 CV splits are available at: **[Zenodo/Drive link —
-TODO add]** (layout `<cv_scheme>/esmc_tabicl/<DMS_id>.csv`, columns `mutant,y,y_pred,fold`).
+Per-mutant score files for all 217 assays × 3 CV splits are available at:
+https://github.com/calvinmccarter/esmc_tabicl_eval/releases/download/v1/esmc_tabicl_supervised_substitutions_scores.zip
+(layout `model_scores/supervised_substitutions/<cv_scheme>/esmc_tabicl/<DMS_id>.csv`, columns `mutant,y,y_pred,fold`).
 
 Both ESMC-600M (`biohub/ESMC-600M`) and TabICLv2 are open source. The method scores all mutants in
 the substitution benchmark (217/217 assays).
@@ -58,4 +59,4 @@ mutants:** 217/217 substitution assays, all variants.
 **Performance (official script):** Avg Spearman 0.630 (random 0.749 / modulo 0.591 / contiguous 0.550).
 Per category: Activity 0.564, Binding 0.567, Expression 0.640, OrganismalFitness 0.559, Stability 0.821.
 
-**Score files:** [Zenodo/Drive link — TODO].
+**Score files:** https://github.com/calvinmccarter/esmc_tabicl_eval/releases/download/v1/esmc_tabicl_supervised_substitutions_scores.zip
